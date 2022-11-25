@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Вячеслав Андреев](https://up.htmlacademy.ru/adaptive/27/user/2008437).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Бабченко](https://htmlacademy.ru/profile/babtshe).
 
 ---
 
