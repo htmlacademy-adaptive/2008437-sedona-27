@@ -1,0 +1,18 @@
+.header {
+  position: relative;
+  padding: 17px 20px;
+
+  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  margin-right: 25px;
+  align-self: flex-start;
+}

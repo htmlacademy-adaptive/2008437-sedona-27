@@ -1,0 +1,48 @@
+.review-form__fieldset {
+  margin: 0;
+  padding: 24px 20px;
+  border: none;
+
+  &:not(:last-of-type) {
+    box-shadow: 0 -1px 0 #e5e5e5,
+      0 1px 0 #e5e5e5;
+  }
+}
+
+.review-form__title {
+  width: 100%;
+  margin-bottom: 20px;
+  float: left;
+  text-align: center;
+  .subtitle-black();
+}
+
+.review-form__variant {
+  .subtitle-black();
+}
+
+.review-form__tip {
+  display: block;
+  text-align: right;
+}
+
+.review-form__wrapper {
+  padding: 24px 20px;
+}
+
+.review-form__textarea {
+  box-sizing: border-box;
+  max-width: 279px;
+  min-height: 150px;
+  padding: 16px;
+  border: none;
+  border-radius: 0;
+  .subtitle-black();
+  font-family: inherit;
+  text-transform: none;
+  background-color: #f2f2f2;
+
+  &:placeholder-shown {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
