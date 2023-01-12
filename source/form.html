@@ -38,12 +38,16 @@
       </nav>
     </header>
 
-    <main class="form-container">
+    <main class="page-container">
 
-      <section class="promo promo--form">
-        <img class="promo__image" src="img/sedona-sign.svg" width="229" height="39" alt="Добро пожаловать в Седону – лучшую альтернативу Гранд Каньону!">
-        <h1 class="promo__title">Оставьте свой отзыв</h1>
-        <p class="promo__subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <section class="promo promo--catalog">
+        <div class="promo__image-wrapper">
+          <img class="promo__image" src="img/sedona-sign.svg" width="229" height="39" alt="Добро пожаловать в Седону – лучшую альтернативу Гранд Каньону!">
+        </div>
+        <div class="promo__content">
+          <h1 class="promo__title">Фото и видео</h1>
+          <p class="promo__subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
       </section>
 
       <section class="review-form">
@@ -80,17 +84,17 @@
             <label class="review-form__selector">
               <input class="visually-hidden" type="radio" name="common-impressions" value="mostly-positive">
               <span class="review-form__radio"></span>
-              <span class="review-form__label">Скорее положительное</span>
+              <span class="review-form__variant">Скорее положительное</span>
             </label>
             <label class="review-form__selector">
               <input class="visually-hidden" type="radio" name="common-impressions" value="mostly-negative">
               <span class="review-form__radio"></span>
-              <span class="review-form__label">Скорее отрицательное</span>
+              <span class="review-form__variant">Скорее отрицательное</span>
             </label>
             <label class="review-form__selector">
               <input class="visually-hidden" type="radio" name="common-impressions" value="hard-to-say">
               <span class="review-form__radio"></span>
-              <span class="review-form__label">Затрудняюсь ответить</span>
+              <span class="review-form__variant">Затрудняюсь ответить</span>
             </label>
           </fieldset>
           <fieldset class="review-form__fieldset">
@@ -98,31 +102,33 @@
             <label class="review-form__selector">
               <input class="visually-hidden" type="checkbox" name="visited-sightseeings" value="Devils-bridge" checked>
               <span class="review-form__checkbox"></span>
-              <span class="review-form__label">Мост Дьявола</span>
+              <span class="review-form__variant">Мост Дьявола</span>
             </label>
             <label class="review-form__selector">
               <input class="visually-hidden" type="checkbox" name="visited-sightseeings" value="Bell-mountain" checked>
               <span class="review-form__checkbox"></span>
-              <span class="review-form__label">Гора-Колокол</span>
+              <span class="review-form__variant">Гора-Колокол</span>
             </label>
             <label class="review-form__selector">
               <input class="visually-hidden" type="checkbox" name="visited-sightseeings" value="Slide-park" checked>
               <span class="review-form__checkbox"></span>
-              <span class="review-form__label">Слайд-парк</span>
+              <span class="review-form__variant">Слайд-парк</span>
             </label>
             <label class="review-form__selector">
               <input class="visually-hidden" type="checkbox" name="visited-sightseeings" value="Red-rocks">
               <span class="review-form__checkbox"></span>
-              <span class="review-form__label">Красные скалы</span>
+              <span class="review-form__variant">Красные скалы</span>
             </label>
           </fieldset>
           <fieldset class="review-form__fieldset">
-            <legend class="review-form__title">Посещенные достопримечательности:</legend>
+            <legend class="review-form__title">Опишите свои эмоции:</legend>
             <textarea class="review-form__textarea" name="review-text" id="textarea_form" cols="30" rows="10" placeholder="Опишите подробно все свои восторги">
             </textarea>
           </fieldset>
-          <button class="review-form__button button">Отправить отзыв</button>
-          <span class="review-form__tip">* — обязательные поля</span>
+          <div class="review-form__wrapper">
+            <button class="review-form__button button">Отправить отзыв</button>
+            <span class="review-form__tip">* — обязательные поля</span>
+          </div>
         </form>
       </section>
 
@@ -164,14 +170,12 @@
             </a>
           </li>
         </ul>
-        <p class="footer__author">
-          <a class="footer__author-link" href="https://html-academy.ru">
-            <span class="footer__author-text">Разработано</span>
-            <svg class="footer__author-image" width="27" height="35" viewBox="0 0 27 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
-            </svg>
-          </a>
-        </p>
+        <a class="footer__author-link" href="https://html-academy.ru">
+          <span class="footer__author-text">Разработано</span>
+          <svg class="footer__author-image" width="27" height="35" viewBox="0 0 27 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
+          </svg>
+        </a>
       </div>
     </footer>
 
@@ -182,7 +186,7 @@
           <p class="modal__text">
             Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
           </p>
-          <button class="modal__close-button" type="button">
+          <button class="modal__close-button button" type="button">
             OK
           </button>
         </section>
@@ -194,7 +198,7 @@
             Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.
           </p>
           <div class="modal__button-container">
-            <button class="modal__close-button" type="button">
+            <button class="modal__close-button button" type="button">
               Закрыть окно
             </button>
           </div>
