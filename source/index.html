@@ -6,20 +6,20 @@
     <title>HTML Academy: Седона</title>
     <link rel="ico" href="img/favicon/favicon.ico">
     <link rel="ico" href="img/favicon/favicon.png" type="image/png">
-    <link rel="stylesheet" href="#" type="text/css"><!-- FIXME – Добавить ссылку на стилевой файл -->
+    <link rel="stylesheet" href="css/style.css" type="text/css"><!-- FIXME – Добавить ссылку на стилевой файл -->
   </head>
 
   <body class="page__body">
 
-    <header class="main-header header">
-      <a class="main-header__logo" href="#">
+    <header class="header header--main">
+      <a class="header__logo" href="#">
         <img src="img/icons/logo/logo.svg" width="185" height="96" alt="Логотип туристического городка «Седона».">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть или закрыть меню</span>
+        <button class="main-nav__toggle main-nav__toggle--closed" type="button">
+          <span class="visually-hidden">Открыть или закрыть меню.</span>
         </button>
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper main-nav__wrapper--closed">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--current">
               <a class="site-list__link">Главная</a>
@@ -41,9 +41,13 @@
     <main class="main-container">
 
       <section class="promo promo--main">
-        <img class="promo__image" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в Седону – лучшую альтернативу Гранд Каньону!">
-        <h1 class="promo__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p class="promo__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <div class="promo__image-wrapper">
+          <img class="promo__image" src="img/sedona-slogan.svg" width="282" height="214" alt="Добро пожаловать в Седону – лучшую альтернативу Гранд Каньону!">
+        </div>
+        <div class="promo__content">
+          <h1 class="promo__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="promo__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
       </section>
 
       <section class="features">
@@ -51,7 +55,7 @@
         <ol class="features__list">
           <li class="features__item">
             <div class="features__card-illustrated">
-              <div class="features__card features__card--illustrated">
+              <div class="features__card features__card--illustrated features__card--starting">
                 <h3 class="features__title">Настоящий городок</h3>
                 <span class="features__card-number">— №1 —</span>
                 <p class="features__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
