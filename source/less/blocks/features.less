@@ -1,3 +1,19 @@
+.features {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: calc(50% - 160px);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 160px 0 160px;
+    border-color: #ffffff transparent transparent transparent;
+    content: "";
+  }
+}
+
 .features__list {
   margin: 0;
   padding: 0;
