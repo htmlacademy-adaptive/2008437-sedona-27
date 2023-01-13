@@ -1,9 +1,18 @@
 .video-presentation {
-  padding: 17px 20px 0 20px;
   text-align: center;
 }
 
 .video-presentation__video {
   max-width: 280px;
   max-height: 177px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 648px;
+    max-height: 500px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 800px;
+    max-height: 500px;
+  }
 }
