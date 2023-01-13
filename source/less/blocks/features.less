@@ -46,24 +46,21 @@
 
 .features__item--illustrated {
   @media (min-width: @tablet-width) {
+    grid-column: 1 / -1;
     display: flex;
     flex-wrap: wrap;
     width: 768px;
   }
 
   @media (min-width: @desktop-width) {
+    grid-column: 1 / -1;
     display: flex;
     flex-wrap: wrap;
     width: 1200px;
   }
 }
 
-.features__item--has-sublist {
-  grid-column: 1 / -1;
-}
-
 .features__item--reversed {
-  grid-column: 1 / -1;
   flex-direction: row-reverse;
 }
 
