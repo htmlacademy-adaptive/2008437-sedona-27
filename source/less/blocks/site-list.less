@@ -48,14 +48,14 @@
   .subtitle-white();
   text-align: center;
   text-decoration: none;
-  background-color: #81b3d2;
+  background-color: @light-blue;
 
   &:hover {
-    background-color: #669ec0;
+    background-color: @blue;
   }
 
   &:active {
-    background-color: #5496bd;
+    background-color: @dark-blue;
     color: rgba(102, 158, 192, 0.3);
   }
 
@@ -67,7 +67,7 @@
 
     &:hover {
       background-color: transparent;
-      color: #81b3d2;
+      color: @light-blue;
     }
 
     &:active {
@@ -84,7 +84,7 @@
 
     &:hover {
       background-color: transparent;
-      color: #81b3d2;
+      color: @light-blue;
     }
 
     &:active {
@@ -96,7 +96,7 @@
   &--current {
     @media (min-width: @tablet-width), (min-width: @desktop-width) {
       pointer-events: none;
-      color: #766357;
+      color: @brown;
     }
   }
 }
