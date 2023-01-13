@@ -25,11 +25,22 @@
     grid-template-rows: auto auto auto auto;
     width: 768px;
   }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: auto auto auto auto;
+    width: 1200px;
+  }
 }
 
 .features__item {
   @media (min-width: @tablet-width) {
     width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
   }
 }
 
@@ -38,6 +49,12 @@
     display: flex;
     flex-wrap: wrap;
     width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
   }
 }
 
@@ -101,7 +118,11 @@
   display: block;
 
   @media (min-width: @tablet-width) {
-    width: 511px;
+    width: 512px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
   }
 }
 
