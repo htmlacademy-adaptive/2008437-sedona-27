@@ -9,7 +9,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: calc(50% - 11px);
+  top: 17px;
   right: 20px;
   z-index: 2;
   display: block;
@@ -55,6 +55,15 @@
   .main-nav--closed .site-list {
     display: none;
   }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .site-list {
+  display: block;
+  padding-top: 110px;
 }
 
 .main-nav--opened .main-nav__toggle {
