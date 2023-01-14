@@ -7,13 +7,13 @@
     <title>HTML Academy: Седона</title>
     <link rel="ico" href="img/favicon/favicon.ico">
     <link rel="ico" href="img/favicon/favicon.png" type="image/png">
-    <link rel="stylesheet" href="css/style.css" type="text/css"><!-- FIXME – Добавить ссылку на стилевой файл -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <base href="https://htmlacademy-adaptive.github.io/2008437-sedona-27/3/">
 </head>
 
   <body class="page__body">
 
-    <header class="header header--form">
+    <header class="header">
       <a class="header__logo" href="index.html">
         <img src="img/icons/logo/logo.svg" width="185" height="96" alt="Логотип туристического городка «Седона».">
       </a>
@@ -40,13 +40,13 @@
 
     <main class="page-container">
 
-      <section class="promo promo--catalog">
+      <section class="promo">
         <div class="promo__image-wrapper">
           <img class="promo__image" src="img/sedona-sign.svg" width="229" height="39" alt="Добро пожаловать в Седону – лучшую альтернативу Гранд Каньону!">
         </div>
         <div class="promo__content">
-          <h1 class="promo__title">Фото и видео</h1>
-          <p class="promo__subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          <h1 class="promo__title">Оставьте свой отзыв</h1>
+          <p class="promo__subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
       </section>
 
@@ -79,7 +79,7 @@
               <input class="review-form__field field field--mail" type="email" placeholder="Введите e-mail" aria-label="Поле ввода имейла." required>
             </label>
           </fieldset>
-          <fieldset class="review-form__fieldset">
+          <fieldset class="review-form__fieldset review-form__fieldset--wide">
             <legend class="review-form__title">Ваше общее впечатление:</legend>
             <label class="review-form__selector">
               <input class="visually-hidden" type="radio" name="common-impressions" value="mostly-positive">
@@ -97,7 +97,7 @@
               <span class="review-form__variant">Затрудняюсь ответить</span>
             </label>
           </fieldset>
-          <fieldset class="review-form__fieldset">
+          <fieldset class="review-form__fieldset review-form__fieldset--wide">
             <legend class="review-form__title">посещенные достопримечательности:</legend>
             <label class="review-form__selector">
               <input class="visually-hidden" type="checkbox" name="visited-sightseeings" value="Devils-bridge" checked>
@@ -120,12 +120,12 @@
               <span class="review-form__variant">Красные скалы</span>
             </label>
           </fieldset>
-          <fieldset class="review-form__fieldset">
+          <fieldset class="review-form__fieldset review-form__fieldset--wide">
             <legend class="review-form__title">Опишите свои эмоции:</legend>
             <textarea class="review-form__textarea" name="review-text" id="textarea_form" cols="25" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <div class="review-form__wrapper">
-            <button class="review-form__button button">Отправить отзыв</button>
+            <button class="review-form__button button" type="submit">Отправить отзыв</button>
             <span class="review-form__tip">* — обязательные поля</span>
           </div>
         </form>
@@ -204,7 +204,7 @@
         </section>
       </div>
     </div>
-
+    <script src="js/app.js"></script>
   </body>
-  <script src="js/app.js"></script>
+
 </html>
