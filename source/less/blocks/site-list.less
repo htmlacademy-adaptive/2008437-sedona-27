@@ -70,6 +70,10 @@
     color: rgba(102, 158, 192, 0.3);
   }
 
+  &--current {
+    color: @darker-blue;
+  }
+
   .site-list__item:first-child .site-list__link {
     box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
   }
@@ -94,6 +98,11 @@
       background-color: transparent;
       color: rgba(0, 0, 0, 0.3);
     }
+
+    &--current {
+      pointer-events: none;
+      color: @brown;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -112,10 +121,8 @@
       background-color: transparent;
       color: rgba(0, 0, 0, 0.3);
     }
-  }
 
-  &--current {
-    @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    &--current {
       pointer-events: none;
       color: @brown;
     }
