@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Седона</title>
+    <link rel="ico" href="img/favicon/favicon.ico">
+    <link rel="ico" href="img/favicon/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <base href="https://htmlacademy-adaptive.github.io/2008437-sedona-27/4/">
+</head>
+
+  <body class="page__body">
+
+    <header class="header">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть или закрыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--current">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://html-academy.ru">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__logo" href="index.html">
+        <img src="img/icons/logo/logo.svg" width="185" height="96" alt="Логотип туристического городка «Седона».">
+      </a>
+    </header>
+
+    <main class="page-container">
+
+      <section class="promo">
+        <div class="promo__image-wrapper">
+          <img class="promo__image promo__image--small" src="img/sedona-sign.svg" width="229" height="39" alt="Добро пожаловать в Седону – лучшую альтернативу Гранд Каньону!">
+        </div>
+        <div class="promo__content">
+          <h1 class="promo__title">Фото и видео</h1>
+          <p class="promo__subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <h2 class="visually-hidden">Фото видов Седоны</h2>
+        <ul class="gallery__list">
+          <li class="gallery__item gallery__item--wide">
+            <figure class="gallery__container">
+              <img class="gallery__photo gallery__photo--wide" src="img/photo-catalog-1.jpg" width="280" height="280" alt="Красивая дорога залитая закатным солнцем.">
+              <figcaption class="gallery__description">
+                <div class="gallery__author-wrapper">
+                  <h3 class="gallery__caption">Неродные просторы</h3>
+                  <span class="gallery__author">Автор фото: Борис</span>
+                </div>
+                <button class="gallery__like-counter" type="button">1350</button>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="gallery__item">
+            <figure class="gallery__container">
+              <img class="gallery__photo" src="img/photo-catalog-2.jpg" width="280" height="280" alt="Растительность пустыни.">
+              <figcaption class="gallery__description">
+                <div class="gallery__author-wrapper">
+                  <h3 class="gallery__caption">Местная растительность</h3>
+                  <span class="gallery__author">Автор фото: Сергей</span>
+                </div>
+                <button class="gallery__like-counter" type="button">143</button>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="gallery__item">
+            <figure class="gallery__container">
+              <img class="gallery__photo" src="img/photo-catalog-3.jpg" width="280" height="280" alt="Красивое шоссе сквозь изгибы холмов.">
+              <figcaption class="gallery__description">
+                <div class="gallery__author-wrapper">
+                  <h3 class="gallery__caption">Дорога на север</h3>
+                  <span class="gallery__author">Автор фото: Петр</span>
+                </div>
+                <button class="gallery__like-counter" type="button">96</button>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="gallery__item">
+            <figure class="gallery__container">
+              <img class="gallery__photo" src="img/photo-catalog-4.jpg" width="280" height="280" alt="Знаменитый мост дьявола в красных скалах.">
+              <figcaption class="gallery__description">
+                <div class="gallery__author-wrapper">
+                  <h3 class="gallery__caption">Мост Дьявола</h3>
+                  <span class="gallery__author">Автор фото: Антон</span>
+                </div>
+                <button class="gallery__like-counter" type="button">254</button>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+
+      </section>
+
+      <section class="video-presentation">
+        <h2 class="video-presentation__title">Все еще сомневаетесь?</h2>
+        <p class="video-presentation__text">
+          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+        </p>
+        <video class="video-presentation__video" poster="img/video-cover.jpg">
+          <source src="#" type="video/mp4">
+        </video>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <span class="footer__hashtag">#visitsedona</span>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--vkontakte" href="#">
+              <svg class="footer__social-image footer__social-image--vk" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_29705_1038)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 5.948C23.616 5.402 23.45 5 22.655 5H20.03C19.362 5 19.054 5.347 18.887 5.73C18.887 5.73 17.552 8.926 15.661 11.002C15.049 11.604 14.771 11.795 14.437 11.795C14.27 11.795 14.019 11.604 14.019 11.057V5.948C14.019 5.292 13.835 5 13.279 5H9.151C8.734 5 8.483 5.304 8.483 5.593C8.483 6.214 9.429 6.358 9.526 8.106V11.904C9.526 12.737 9.373 12.888 9.039 12.888C8.149 12.888 5.984 9.677 4.699 6.003C4.45 5.288 4.198 5 3.527 5H0.9C0.15 5 0 5.347 0 5.73C0 6.412 0.89 9.8 4.145 14.281C6.315 17.341 9.37 19 12.153 19C13.822 19 14.028 18.632 14.028 17.997V15.684C14.028 14.947 14.186 14.8 14.715 14.8C15.105 14.8 15.772 14.992 17.33 16.467C19.11 18.216 19.403 19 20.405 19H23.03C23.78 19 24.156 18.632 23.94 17.904C23.702 17.18 22.852 16.129 21.725 14.882C21.113 14.172 20.195 13.407 19.916 13.024C19.527 12.533 19.638 12.314 19.916 11.877C19.916 11.877 23.116 7.451 23.449 5.948H23.45Z"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_29705_1038">
+                <rect width="24" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+              <span class="visually-hidden">Переход в группу Вконтакте.</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--telegram" href="#">
+              <svg class="footer__social-image footer__social-image--tg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.4391 4.62225L19.2704 19.566C19.0311 20.6205 18.4079 20.883 17.5221 20.3865L12.6936 16.8285L10.3641 19.0695C10.1061 19.3275 9.8909 19.5427 9.39365 19.5427L9.7409 14.6257L18.6891 6.54C19.0784 6.1935 18.6044 6.00075 18.0846 6.348L7.02215 13.314L2.25965 11.823C1.2239 11.4997 1.20515 10.7872 2.47565 10.29L21.1034 3.11325C21.9659 2.79 22.7204 3.30525 22.4391 4.623V4.62225Z"/>
+              </svg>
+              <span class="visually-hidden">Переход в канал Телеграмм.</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--youtube" href="#">
+              <svg class="footer__social-image footer__social-image--yt" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.1813 5H4.81331C3.30618 5 2 6.3 2 7.8V16.1C2 17.7 3.30618 19 4.81331 19H19.1813C20.7889 19 21.9946 17.7 21.9946 16.2V7.8C22.095 6.3 20.7889 5 19.1813 5ZM9.03326 15.4V8.6L15.8656 12L9.03326 15.4Z"/>
+              </svg>
+              <span class="visually-hidden">Переход  на канал Ютуб.</span>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__author-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="footer__author-text">Разработано</span>
+          <svg class="footer__author-image" width="27" height="35" viewBox="0 0 27 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
+          </svg>
+        </a>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+
+</html>
