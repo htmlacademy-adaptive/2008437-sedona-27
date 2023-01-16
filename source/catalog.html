@@ -3,91 +3,102 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="ico" href="img/favicon/favicon.ico">
     <link rel="ico" href="img/favicon/favicon.png" type="image/png">
-    <link rel="stylesheet" href="#" type="text/css"><!-- FIXME – Добавить ссылку на стилевой файл -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
   </head>
 
   <body class="page__body">
 
-    <header class="catalog-header header">
-      <a class="catalog-header__logo" href="index.html">
-        <img src="img/icons/logo/logo.svg" width="185" height="96" alt="Логотип туристического городка «Седона».">
-      </a>
-      <nav class="main-nav">
+    <header class="header">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть или закрыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--current">
-              <a class="site-list__link">Фото и видео</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Форма отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://html-academy.ru">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--current">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://html-academy.ru">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
+      <a class="header__logo" href="index.html">
+        <img src="img/icons/logo/logo.svg" width="185" height="96" alt="Логотип туристического городка «Седона».">
+      </a>
     </header>
 
-    <main class="catalog-container">
+    <main class="page-container">
 
-      <section class="promo promo--catalog">
-        <img class="promo__image" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в Седону – лучшую альтернативу Гранд Каньону!">
-        <h1 class="promo__title">Фото и видео</h1>
-        <p class="promo__subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <section class="promo">
+        <div class="promo__image-wrapper">
+          <img class="promo__image promo__image--small" src="img/sedona-sign.svg" width="229" height="39" alt="Добро пожаловать в Седону – лучшую альтернативу Гранд Каньону!">
+        </div>
+        <div class="promo__content">
+          <h1 class="promo__title">Фото и видео</h1>
+          <p class="promo__subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
       </section>
 
       <section class="gallery">
         <h2 class="visually-hidden">Фото видов Седоны</h2>
         <ul class="gallery__list">
-          <li class="gallery__item">
+          <li class="gallery__item gallery__item--wide">
             <figure class="gallery__container">
-              <img class="gallery__photo" src="img/photo-catalog-1.jpg" width="280" height="280" alt="Красивая дорога залитая закатным солнцем.">
+              <img class="gallery__photo gallery__photo--wide" src="img/photo-catalog-1.jpg" width="280" height="280" alt="Красивая дорога залитая закатным солнцем.">
               <figcaption class="gallery__description">
-                <h3 class="gallery__text">Неродные просторы</h3>
-                <p class="gallery__author">Автор фото: Борис</p>
+                <div class="gallery__author-wrapper">
+                  <h3 class="gallery__caption">Неродные просторы</h3>
+                  <span class="gallery__author">Автор фото: Борис</span>
+                </div>
+                <button class="gallery__like-counter" type="button">1350</button>
               </figcaption>
             </figure>
-            <span class="gallery__like-counter">1350</span>
           </li>
           <li class="gallery__item">
             <figure class="gallery__container">
               <img class="gallery__photo" src="img/photo-catalog-2.jpg" width="280" height="280" alt="Растительность пустыни.">
               <figcaption class="gallery__description">
-                <h3 class="gallery__text">Местная растительность</h3>
-                <p class="gallery__author">Автор фото: Сергей</p>
+                <div class="gallery__author-wrapper">
+                  <h3 class="gallery__caption">Местная растительность</h3>
+                  <span class="gallery__author">Автор фото: Сергей</span>
+                </div>
+                <button class="gallery__like-counter" type="button">143</button>
               </figcaption>
             </figure>
-            <span class="gallery__like-counter">143</span>
           </li>
           <li class="gallery__item">
             <figure class="gallery__container">
               <img class="gallery__photo" src="img/photo-catalog-3.jpg" width="280" height="280" alt="Красивое шоссе сквозь изгибы холмов.">
               <figcaption class="gallery__description">
-                <h3 class="gallery__text">Дорога на север</h3>
-                <p class="gallery__author">Автор фото: Петр</p>
+                <div class="gallery__author-wrapper">
+                  <h3 class="gallery__caption">Дорога на север</h3>
+                  <span class="gallery__author">Автор фото: Петр</span>
+                </div>
+                <button class="gallery__like-counter" type="button">96</button>
               </figcaption>
             </figure>
-            <span class="gallery__like-counter">96</span>
           </li>
           <li class="gallery__item">
             <figure class="gallery__container">
               <img class="gallery__photo" src="img/photo-catalog-4.jpg" width="280" height="280" alt="Знаменитый мост дьявола в красных скалах.">
               <figcaption class="gallery__description">
-                <h3 class="gallery__text">Мост Дьявола</h3>
-                <p class="gallery__author">Автор фото: Антон</p>
+                <div class="gallery__author-wrapper">
+                  <h3 class="gallery__caption">Мост Дьявола</h3>
+                  <span class="gallery__author">Автор фото: Антон</span>
+                </div>
+                <button class="gallery__like-counter" type="button">254</button>
               </figcaption>
             </figure>
-            <span class="gallery__like-counter">254</span>
           </li>
         </ul>
 
@@ -141,15 +152,15 @@
             </a>
           </li>
         </ul>
-        <p class="footer__author">
+        <a class="footer__author-link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="footer__author-text">Разработано</span>
           <svg class="footer__author-image" width="27" height="35" viewBox="0 0 27 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
           </svg>
-        </p>
+        </a>
       </div>
     </footer>
-
+    <script src="js/script.js"></script>
   </body>
 
 </html>

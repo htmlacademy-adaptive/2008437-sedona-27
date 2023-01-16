@@ -1,0 +1,113 @@
+.main-nav {
+  position: relative;
+  min-height: 56px;
+}
+
+.main-nav__list {
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.main-nav--opened .main-nav__list {
+  position: absolute;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--nojs {
+    margin-bottom: 56px;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: block;
+  }
+
+  .main-nav--nojs + .header__logo {
+    top: auto;
+    bottom: 0;
+    transform: translateY(100%);
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 3;
+  display: block;
+  width: 23px;
+  height: 22px;
+  padding: 0;
+  margin-left: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 4px;
+  background-color: @light-blue;
+  box-shadow: 0 9px 0 0 @light-blue, 0 18px 0 0 @light-blue;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(@light-blue, 30%);
+  box-shadow:
+    0 5px 0 0 fade(@light-blue, 30%),
+    0 10px 0 0 fade(@light-blue, 30%);
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 2px);
+    left: -2.5px;
+    width: 28px;
+    height: 4px;
+    background-color: @white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: fade(@white, 60%);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(@white, 30%);
+  }
+}
