@@ -3,25 +3,28 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 324px 324px;
-    max-width: 648px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 88px;
+    justify-content: center;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 480px 480px;
     max-width: 960px;
   }
 }
 
 .review-form__fieldset {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 16px;
   margin: 0;
   padding: 24px 20px;
   border: none;
 
-  &:not(:last-of-type) {
-    box-shadow: 0 -1px 0 @dark-grey,
-      0 1px 0 @dark-grey;
+  @media (min-width: @tablet-width) {
+    padding: 0;
   }
 }
 
@@ -36,15 +39,89 @@
 }
 
 .review-form__title {
+  position: relative;
+  top: 24px;
+  box-sizing: border-box;
   width: 100%;
   margin-bottom: 20px;
-  float: left;
   text-align: center;
   .subtitle-black();
 }
 
+.field-wrapper--mail {
+  &::after {
+    background-image: url("../img/icons/other/mail.svg");
+  }
+}
+
+.field-wrapper--phone {
+  &::after {
+    background-image: url("../img/icons/other/phone.svg");
+  }
+}
+
+.review-form__selector {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 280px;
+}
+
+.review-form__radio,
+.review-form__checkbox {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  background: @light-grey;
+  margin-right: 16px;
+
+  &::after {
+    display: none;
+    position: absolute;
+    content: "";
+  }
+}
+
+.review-form__radio {
+  border-radius: 50%;
+}
+
+.review-form__checkbox {
+  border-radius: 4px;
+}
+
+input[type="radio"]:checked + .review-form__radio {
+  &::after {
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: @text-color;
+  }
+}
+
+input[type="checkbox"]:checked + .review-form__checkbox {
+  &::after {
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 22px;
+    height: 16px;
+    background-image: url("../img/icons/other/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
 .review-form__variant {
   .subtitle-black();
+  text-transform: none;
 }
 
 .review-form__tip {
@@ -58,7 +135,6 @@
 
 .review-form__textarea {
   box-sizing: border-box;
-  max-width: 279px;
   min-height: 150px;
   padding: 16px;
   border: none;
@@ -71,4 +147,8 @@
   &:placeholder-shown {
     color: rgba(0, 0, 0, 0.3);
   }
+}
+
+.review-form__button {
+  margin-bottom: 3px;
 }
