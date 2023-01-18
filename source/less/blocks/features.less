@@ -42,75 +42,36 @@
   }
 }
 
-.features__item--illustrated {
-  @media (min-width: @tablet-width) {
-    grid-column: 1 / -1;
-    display: flex;
-    flex-wrap: wrap;
-    width: 768px;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-column: 1 / -1;
-    display: flex;
-    flex-wrap: wrap;
-    width: 1200px;
-  }
-}
-
-.features__item--reversed {
-  flex-direction: row-reverse;
-}
-
 .features__card {
   text-align: center;
   background-color: @grey;
 }
 
-.features-card {
-  padding: 37px 18px;
-
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    width: 256px;
-    min-height: 256px;
-    padding: 42px 33px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 400px;
-  }
-}
-
 .features__card--illustrated {
   background-color: @light-blue;
 
-  > .features__title {
+  & .features__title {
     .subtitle-white();
   }
 
-  > .features__card-number {
+  & .features__card-number {
     color: @white;
   }
 
-  > .features__description {
+  & .features__description {
     color: @white;
   }
 }
 
 .features__title {
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 12.5px;
   .subtitle-black();
 }
 
 .features__card-number {
   display: block;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 }
 
 .features__description {
