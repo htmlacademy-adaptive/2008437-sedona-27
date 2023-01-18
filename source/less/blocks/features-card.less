@@ -1,0 +1,36 @@
+.features-card {
+  position: relative;
+  padding: 24px 26px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 256px;
+    min-height: 256px;
+    padding: 42px 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
+}
+
+.features-card--illustrated {
+  padding: 37px 18px;
+}
+
+.features-card--bordered {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 284px;
+    height: 1px;
+    background-color: @line-grey;
+  }
+}

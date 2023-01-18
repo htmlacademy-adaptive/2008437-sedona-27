@@ -1,0 +1,19 @@
+.features-card-wrapper {
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+  }
+}
+
+.features-card-wrapper--reversed {
+  flex-direction: row-reverse;
+}
