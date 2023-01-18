@@ -3,27 +3,36 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 32px 18px 37.5px 18px;
+  padding-top: 31.5px;
+  padding-bottom: 39px;
 
   @media (min-width: @tablet-width) {
-    padding: 47.5px 18px 56.5px 18px;
+    padding-top: 47.5px;
+    padding-bottom: 56.5px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 59px 18px 45px 18px;
+    padding-top: 59px;
+    padding-bottom: 45px;
   }
 }
 
 .promo__title {
-  max-width: 490px;
+  text-indent: -5px;
+  max-width: 83%;
   margin: 0;
   margin-bottom: 35px;
   text-align: center;
   .subtitle-black();
+  line-height: 26.5px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 490px;
+  }
 }
 
 .promo__subtitle {
-  max-width: 490px;
+  max-width: 84%;
   margin: 0;
   text-align: center;
 }

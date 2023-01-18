@@ -3,22 +3,6 @@
   padding: 0;
   list-style-type: none;
 
-  @media (max-width: @mobile-width-only) {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      top: 0;
-      right: calc(50% - 160px);
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 15px 160px 0 160px;
-      border-color: @white transparent transparent transparent;
-      content: "";
-    }
-  }
-
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 256px 256px 256px;
@@ -65,7 +49,7 @@
 
 .features__title {
   margin: 0;
-  margin-bottom: 12.5px;
+  margin-bottom: 10px;
   .subtitle-black();
 }
 
@@ -76,6 +60,7 @@
 
 .features__description {
   margin: 0;
+  text-indent: 1.5px;
 }
 
 
