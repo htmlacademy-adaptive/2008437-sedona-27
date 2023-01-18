@@ -11,7 +11,8 @@
     display: grid;
     grid-template-columns: 256px 256px 256px;
     row-gap: 0;
-    padding: 158px 33px 61px 33px;
+    padding: 0;
+    //padding: 158px 33px 61px 33px;
   }
 
   @media (min-width: @desktop-width) {
@@ -38,31 +39,61 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 0;
+    box-sizing: border-box;
+    min-height: 330px;
     margin: 0;
+    padding: 158px 40px 0 40px;
+    text-align: center;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0;
+    box-sizing: border-box;
+    min-height: 330px;
     margin: 0;
+    padding: 170px 50px 0 50px;
+    text-align: center;
   }
 }
 
 .features-sublist__item--home {
   &::before {
     background-image: url("../img/icons/other/house.svg");
+
+    @media (min-width: @tablet-width) {
+      width: 77px;
+      height: 72px;
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 
 .features-sublist__item--food {
   &::before {
     background-image: url("../img/icons/other/burger.svg");
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 70px;
+      top: 62px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 
 .features-sublist__item--souvenirs {
   &::before {
     background-image: url("../img/icons/other/present.svg");
+
+    @media (min-width: @tablet-width) {
+      width: 66.5px;
+      height: 75px;
+      top: 64px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 
@@ -74,4 +105,10 @@
 
 .features-sublist__description {
   margin: 0;
+
+  @media (max-width: @mobile-width-only) {
+    & br {
+      display: none;
+    }
+  }
 }
