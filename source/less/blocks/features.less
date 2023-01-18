@@ -3,6 +3,11 @@
   padding: 0;
   list-style-type: none;
 
+  @media (max-width: @mobile-width-only) {
+    padding-bottom: 6px;
+    background-color: @grey;
+  }
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 256px 256px 256px;
