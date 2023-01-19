@@ -20,6 +20,7 @@
 
   @media (min-width: @desktop-width) {
     width: 400px;
+    padding: 0 32px;
   }
 }
 
@@ -39,6 +40,16 @@
   & .features-card__title {
     color: @white;
     max-width: 150px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 53px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    & .features-card__description--narrow {
+      max-width: 220px;
+    }
   }
 }
 

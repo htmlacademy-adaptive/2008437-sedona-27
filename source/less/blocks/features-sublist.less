@@ -11,7 +11,6 @@
     padding: 23px 18px 46px;
   }
 
-
   @media (min-width: @tablet-width) {
     grid-template-columns: 256px 256px 256px;
   }
@@ -34,23 +33,18 @@
     content: "";
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
   }
 
   @media (min-width: @tablet-width) {
     box-sizing: border-box;
     min-height: 330px;
     margin: 0;
-    padding: 158px 40px 0 40px;
+    padding: 148px 40px 0 40px;
     text-align: center;
   }
 
   @media (min-width: @desktop-width) {
-    box-sizing: border-box;
-    min-height: 330px;
-    margin: 0;
-    padding: 170px 50px 0 50px;
-    text-align: center;
+    padding: 160px 50px 0 50px;
   }
 }
 
@@ -59,11 +53,15 @@
     background-image: url("../img/icons/other/house.svg");
 
     @media (min-width: @tablet-width) {
-      width: 77px;
-      height: 72px;
-      top: 60px;
+      width: 80px;
+      height: 71px;
+      top: 58px;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translateX(-52%);
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 70px;
     }
   }
 }
@@ -75,9 +73,14 @@
     @media (min-width: @tablet-width) {
       width: 80px;
       height: 70px;
-      top: 62px;
+      top: 60px;
       left: 50%;
       transform: translateX(-50%);
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 70px;
+      transform: translateX(-53%);
     }
   }
 }
@@ -87,11 +90,26 @@
     background-image: url("../img/icons/other/present.svg");
 
     @media (min-width: @tablet-width) {
-      width: 66.5px;
-      height: 75px;
-      top: 64px;
+      width: 75px;
+      height: 81px;
+      top: 60px;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translateX(-49%);
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 75.5px;
+      height: 75px;
+      top: 70px;
+      transform: translateX(-53%);
+      background-size: cover;
+      background-image: url("../img/icons/other/present-big.svg");
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    & .features-sublist__title {
+      margin-top: 10px;
     }
   }
 }
@@ -100,6 +118,11 @@
   margin-top: 8px;
   margin-bottom: 16px;
   .subtitle-black();
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    margin-bottom: 24px;
+  }
 }
 
 .features-sublist__description {
