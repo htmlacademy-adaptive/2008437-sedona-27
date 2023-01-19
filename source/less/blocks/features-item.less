@@ -1,13 +1,14 @@
 .features-item {
   @media (min-width: @tablet-width) {
-    grid-column: 1 / -1;
+    grid-column: span 1;
     display: flex;
     flex-wrap: wrap;
-    width: 768px;
   }
+}
 
-  @media (min-width: @desktop-width) {
-    width: 1200px;
+.features-item--wide {
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / -1;
   }
 }
 
