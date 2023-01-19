@@ -39,13 +39,16 @@
 
   & .features-card__title {
     color: @white;
-    max-width: 150px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 53px;
     padding-left: 60px;
     padding-right: 60px;
+
+    & .features-card__title {
+      max-width: 150px;
+    }
 
     & .features-card__description--narrow {
       max-width: 220px;
@@ -115,6 +118,12 @@
 .features-card__description {
   margin: 0;
   text-indent: 1.5px;
+
+  @media (max-width: @mobile-width-only) {
+    & .features-card__tablet-br {
+      display: none;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     & br {
