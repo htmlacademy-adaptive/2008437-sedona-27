@@ -7,25 +7,74 @@
     column-gap: 88px;
     row-gap: 48px;
     justify-content: center;
+    padding: 0 60px 64px 60px;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
     max-width: 960px;
+    row-gap: 56px;
   }
 }
 
 .review-form__fieldset {
   position: relative;
   display: grid;
-  grid-template-columns: auto;
-  row-gap: 16px;
-  margin: 0;
-  padding: 24px 20px;
+  justify-content: center;
   border: none;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: @mobile-width-only) {
+    grid-template-columns: auto;
+    column-gap: 32px;
+    row-gap: 16px;
+    margin: 0;
+    padding: 24px 20px;
+    margin-top: -15px;
+  }
 
   @media (min-width: @tablet-width) {
-    padding: 19px 60px 0 60px;
+    padding-bottom: 15px;
+  }
+}
+
+.review-form__fieldset--radio {
+  @media (min-width: @tablet-width) {
+    row-gap: 16px;
+    column-gap: 16px;
+    grid-template-columns: 280px 280px;
+  }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 28px;
+    grid-template-columns: 280px 280px 280px;
+  }
+}
+
+.review-form__fieldset--checkbox {
+  @media (min-width: @tablet-width) {
+    row-gap: 16px;
+    grid-template-columns: 224px 224px;
+  }
+
+  @media (min-width: @tablet-width) {
+    column-gap: 64px;
+    grid-template-columns: 172px 170px 153px 184px;
+  }
+}
+
+.review-form__fieldset--bordered {
+  @media (min-width: @tablet-width) {
+    &::after {
+      position: absolute;
+      top: -50px;
+      right: -43px;
+      height: 323px;
+      width: 1px;
+      background-color: @border-grey;
+      content: "";
+    }
   }
 }
 
@@ -40,13 +89,16 @@
 }
 
 .review-form__title {
-  position: relative;
-  top: 24px;
   box-sizing: border-box;
   width: 100%;
+  margin-top: -24px;
   margin-bottom: 20px;
   text-align: center;
   .subtitle-black();
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .field-wrapper--mail {
@@ -130,10 +182,6 @@ input[type="checkbox"]:checked + .review-form__checkbox {
   text-align: right;
 }
 
-.review-form__wrapper {
-  padding: 24px 20px;
-}
-
 .review-form__textarea {
   box-sizing: border-box;
   min-height: 150px;
@@ -148,8 +196,46 @@ input[type="checkbox"]:checked + .review-form__checkbox {
   &:placeholder-shown {
     color: rgba(0, 0, 0, 0.3);
   }
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 160px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 768px;
+    height: 160px;
+  }
+}
+
+.review-form__wrapper {
+  padding: 24px 20px;
+  grid-column: span 2;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    align-items: center;
+    width: 648px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 768px;
+  }
 }
 
 .review-form__button {
-  margin-bottom: 3px;
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 3px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 384px;
+  }
 }
