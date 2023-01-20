@@ -59,7 +59,12 @@
               <span class="features-card__number">— №1 —</span>
               <p class="features-card__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img class="features-item__image" src="img/features-photo-1.jpg" width="520" height="260" alt="Вид на обычный городской дом в Седоне.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-city_desktop.jpg 1x, img/photo-city_desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-city_mobile.jpg 1x, img/photo-city_mobile@2x.jpg 2x">
+              <img class="features-item__image" src="img/photo-city_mobile.jpg" srcset="img/photo-city_mobile@2x.jpg 2x" width="320" height="260" alt="Вид на обычный городской дом в Седоне.">
+            </picture>
+
             <ul class="features-sublist">
               <li class="features-sublist__item features-sublist__item--home">
                 <div class="features-sublist__card">
@@ -87,7 +92,10 @@
               <span class="features-card__number">— №2 —</span>
               <p class="features-card__description features-card__description--narrow">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img class="features-item__image" src="img/features-photo-2.jpg" width="520" height="260" alt="Вид на красивый каньон.">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/photo-bridge_desktop.jpg 1x, img/photo-bridge_desktop@2x.jpg 2x">
+              <img class="features-item__image" src="img/photo-bridge.jpg" srcset="img/photo-bridge@2x.jpg 2x" width="320" height="260" alt="Вид на красивый каньон.">
+            </picture>
           </li>
           <li class="features-item">
             <div class="features-card features-card--bordered">
