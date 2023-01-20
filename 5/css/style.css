@@ -1274,7 +1274,7 @@
     grid-template-columns: 224px 224px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .review-form__fieldset--checkbox {
     column-gap: 64px;
     grid-template-columns: 172px 170px 153px 184px;
