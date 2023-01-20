@@ -3,15 +3,32 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  padding: 90px 19px 85px 19px;
-  background-image: url("../img/intro-triangle.svg"), url("../img/back-promo.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, center;
   background-size: auto, cover;
   background-color: @darker-blue;
 
+  @media (max-width: @mobile-width-only) {
+    padding: 90px 19px 85px 19px;
+    background-image: url("../img/intro-triangle.svg"),
+      url("../img/back-mobile.jpg");
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-triangle.svg"),
+        url("../img/back-mobile@2x.jpg");
+    }
+  }
+
   @media (min-width: @tablet-width) {
     padding: 79px 19px 94px 19px;
+    background-image: url("../img/intro-triangle.svg"),
+      url("../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-triangle.svg"),
+        url("../img/back-desktop@2x.jpg");
+    }
   }
 }
 
