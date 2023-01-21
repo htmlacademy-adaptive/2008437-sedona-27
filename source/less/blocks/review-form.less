@@ -129,6 +129,14 @@
   background: @light-grey;
   margin-right: 16px;
 
+  &:hover {
+    background-color: @dark-grey;
+  }
+
+  &:active {
+    background-color: @darker-grey;
+  }
+
   &::after {
     display: none;
     position: absolute;
@@ -144,7 +152,7 @@
   border-radius: 4px;
 }
 
-input[type="radio"]:checked + .review-form__radio {
+.review-form_input:checked ~ .review-form__radio {
   &::after {
     display: block;
     top: 50%;
@@ -153,11 +161,17 @@ input[type="radio"]:checked + .review-form__radio {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: @text-color;
+    background-color: @text-color;
+  }
+
+  &:active {
+    &::after {
+      background-color: fade(@text-color, 30%);
+    }
   }
 }
 
-input[type="checkbox"]:checked + .review-form__checkbox {
+.review-form_input:checked ~ .review-form__checkbox {
   &::after {
     display: block;
     top: 50%;
@@ -165,10 +179,16 @@ input[type="checkbox"]:checked + .review-form__checkbox {
     transform: translate(-50%, -50%);
     width: 22px;
     height: 16px;
-    background-image: url("../img/icons/other/tick.svg");
+    background-image: url("data:image/svg+xml,%3Csvg width='22' height='16' viewBox='0 0 22 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.8053 1.30662L20.759 0.22188C20.4736 -0.0739599 19.9029 -0.0739599 19.6176 0.22188L8.29884 11.9569L2.40167 5.84283C2.11633 5.54699 1.54563 5.54699 1.26028 5.84283L0.21401 6.92758C-0.0713367 7.22342 -0.0713367 7.8151 0.21401 8.11094L7.63303 15.8028C7.82326 16 8.01349 16 8.20373 16C8.39396 16 8.58419 15.9014 8.77442 15.8028L21.615 2.48999C22.0906 2.19415 22.0906 1.70108 21.8053 1.30662Z' fill='%23333333'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  &:active {
+    &::after {
+      background-image: url("data:image/svg+xml,%3Csvg width='22' height='16' viewBox='0 0 22 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.8053 1.30662L20.759 0.22188C20.4736 -0.0739599 19.9029 -0.0739599 19.6176 0.22188L8.29884 11.9569L2.40167 5.84283C2.11633 5.54699 1.54563 5.54699 1.26028 5.84283L0.21401 6.92758C-0.0713367 7.22342 -0.0713367 7.8151 0.21401 8.11094L7.63303 15.8028C7.82326 16 8.01349 16 8.20373 16C8.39396 16 8.58419 15.9014 8.77442 15.8028L21.615 2.48999C22.0906 2.19415 22.0906 1.70108 21.8053 1.30662Z' fill='rgba(3, 3, 3, 0.3)'/%3E%3C/svg%3E%0A");
+    }
   }
 }
 
