@@ -69,13 +69,13 @@
     background-color: @accent-darkest-color;
 
     & .footer__social-image {
-      fill: fade(@opposite-color, 30%);
+      fill: rgba(red(@opposite-color), green(@opposite-color), blue(@opposite-color), 0.3);
     }
   }
 }
 
 .footer__social-image {
-  fill: @white;
+  fill: @opposite-color;
 }
 
 .footer__author-link {
