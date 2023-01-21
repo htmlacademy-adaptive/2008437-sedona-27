@@ -72,7 +72,7 @@
       right: -43px;
       height: 323px;
       width: 1px;
-      background-color: @border-grey;
+      background-color: @decorative-border-color;
       content: "";
     }
   }
@@ -94,7 +94,7 @@
   margin-top: -24px;
   margin-bottom: 20px;
   text-align: center;
-  .subtitle-black();
+  .subtitle();
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
@@ -126,15 +126,15 @@
   position: relative;
   width: 46px;
   height: 46px;
-  background: @light-grey;
+  background: @field-color;
   margin-right: 16px;
 
   &:hover {
-    background-color: @dark-grey;
+    background-color: @field-darker-color;
   }
 
   &:active {
-    background-color: @darker-grey;
+    background-color: @field-darkest-color;
   }
 
   &::after {
@@ -193,7 +193,7 @@
 }
 
 .review-form__variant {
-  .subtitle-black();
+  .subtitle();
   text-transform: none;
 }
 
@@ -208,10 +208,10 @@
   padding: 16px;
   border: none;
   border-radius: 0;
-  .subtitle-black();
+  .subtitle();
   font-family: inherit;
   text-transform: none;
-  background-color: @light-grey;
+  background-color: @field-color;
 
   &:placeholder-shown {
     color: rgba(0, 0, 0, 0.3);

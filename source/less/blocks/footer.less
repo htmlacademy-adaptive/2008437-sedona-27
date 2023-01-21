@@ -25,7 +25,7 @@
 
 .footer__hashtag {
   display: block;
-  .title-black();
+  .title();
   margin-bottom: 33.5px;
 
   @media (min-width: @tablet-width) {
@@ -59,17 +59,17 @@
   align-items: center;
   width: 48px;
   height: 48px;
-  background-color: @light-blue;
+  background-color: @accent-color;
 
   &:hover {
-    background-color: @blue;
+    background-color: @accent-darker-color;
   }
 
   &:active {
-    background-color: @dark-blue;
+    background-color: @accent-darkest-color;
 
     & .footer__social-image {
-      fill: @transparent-white;
+      fill: fade(@opposite-color, 30%);
     }
   }
 }
@@ -86,11 +86,11 @@
   color: inherit;
 
   &:hover {
-    color: @light-blue;
+    color: @accent-color;
   }
 
   &:active {
-    color: @alternate-grey;
+    color: @author-darkest-color;
   }
 
   @media (min-width: @tablet-width) {

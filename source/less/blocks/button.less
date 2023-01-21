@@ -2,8 +2,8 @@
   padding: 16px 49px;
   border: 0;
   border-radius: 0;
-  background: @light-blue;
-  color: @white;
+  background: @accent-color;
+  color: @opposite-color;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 21px;
@@ -13,16 +13,16 @@
   cursor: pointer;
 
   &:hover {
-    background-color: @blue;
+    background-color: @accent-darker-color;
   }
 
   &:active {
-    background-color: @dark-blue;
+    background-color: @accent-darkest-color;
     color: rgba(255, 255, 255, 0.3);
   }
 
   &:disabled {
-    background-color: @dark-grey;
+    background-color: @field-darker-color;
     pointer-events: none;
   }
 }

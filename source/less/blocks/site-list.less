@@ -7,7 +7,7 @@
   list-style-type: none;
 
   @media (max-width: @mobile-width-only) {
-    background-color: @light-blue;
+    background-color: @accent-color;
 
     &::after {
       position: absolute;
@@ -55,23 +55,24 @@
 .site-list__link {
   display: block;
   padding: 17px 17px 12px 17px;
-  .subtitle-white();
+  .subtitle();
+  color: @opposite-color;
   text-align: center;
   text-decoration: none;
-  background-color: @light-blue;
+  background-color: @accent-color;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   &:hover {
-    background-color: @blue;
+    background-color: @accent-darker-color;
   }
 
   &:active {
-    background-color: @dark-blue;
+    background-color: @accent-darkest-color;
     color: rgba(102, 158, 192, 0.3);
   }
 
   &--current {
-    color: @darker-blue;
+    color: @menu-accent-color;
   }
 
   .site-list__item:first-child .site-list__link {
@@ -93,17 +94,17 @@
 
     &:hover {
       background-color: transparent;
-      color: @light-blue;
+      color: @accent-color;
     }
 
     &:active {
       background-color: transparent;
-      color: rgba(0, 0, 0, 0.3);
+      color: fade(@title-color, 30%);
     }
 
     &--current {
       pointer-events: none;
-      color: @brown;
+      color: @menu-secondary-accent-color;
     }
   }
 
@@ -112,20 +113,5 @@
     .caption();
     background-color: transparent;
     box-shadow: none;
-
-    &:hover {
-      background-color: transparent;
-      color: @light-blue;
-    }
-
-    &:active {
-      background-color: transparent;
-      color: rgba(0, 0, 0, 0.3);
-    }
-
-    &--current {
-      pointer-events: none;
-      color: @brown;
-    }
   }
 }

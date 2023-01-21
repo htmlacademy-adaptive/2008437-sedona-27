@@ -1,7 +1,7 @@
 .features-card {
   position: relative;
   text-align: center;
-  background-color: @grey;
+  background-color: @alternate-background-color;
 
   @media (max-width: @mobile-width-only) {
     padding: 24px 26px;
@@ -25,7 +25,7 @@
 }
 
 .features-card--illustrated {
-  background-color: @light-blue;
+  background-color: @accent-color;
   color: @white;
 
   @media (max-width: @mobile-width-only) {
@@ -71,7 +71,7 @@
       background-repeat: no-repeat;
       background-position: bottom;
       background-size: auto;
-      background-color: @light-blue;
+      background-color: @accent-color;
       content: "";
     }
   }
@@ -89,7 +89,7 @@
       transform: translateX(-50%);
       width: 284px;
       height: 1px;
-      background-color: @line-grey;
+      background-color: @decorative-line-color;
     }
   }
 }
@@ -97,10 +97,10 @@
 .features-card__title {
   margin: 0;
   margin-bottom: 10px;
-  .subtitle-black();
+  .subtitle();
 
   @media (min-width: @tablet-width) {
-    .title-black();
+    .title();
     max-width: 130px;
     margin-bottom: 12px;
   }
