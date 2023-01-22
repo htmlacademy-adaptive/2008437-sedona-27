@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="ico" href="img/favicon/favicon.ico">
+    <link rel="ico" href="favicon.ico">
     <link rel="ico" href="img/favicon/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <base href="https://htmlacademy-adaptive.github.io/2008437-sedona-27/5/">
@@ -41,12 +41,12 @@
     <main class="page-container">
 
       <section class="banner banner--inner">
-        <h2 class="visually-hidden">Пожалуй, лучший курорт Аризоны!</h2>
+        <h1 class="visually-hidden">Пожалуй, лучший курорт Аризоны!</h1>
         <img class="banner__image banner__image--small" src="img/sedona-sign.svg" width="229" height="39" alt="Добро пожаловать в Седону – лучшую альтернативу Гранд Каньону!">
       </section>
 
       <section class="promo promo--form">
-        <h1 class="promo__title promo__title--inner">Оставьте свой отзыв</h1>
+        <h2 class="promo__title promo__title--inner">Оставьте свой отзыв</h2>
         <p class="promo__subtitle promo__subtitle--inner">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
 
@@ -56,31 +56,27 @@
           <fieldset class="review-form__fieldset review-form__fieldset--bordered">
             <legend class="review-form__title">Представьтесь:</legend>
             <label class="review-form__label">
-              Имя*:
+              <span class="review-form__field-name">Имя*:</span>
               <input class="review-form__field field field--name" type="text" name="name" placeholder="Пётр" aria-label="Поле ввода имени." required>
             </label>
             <label class="review-form__label">
-              Фамилия*:
+              <span class="review-form__field-name">Фамилия*:</span>
               <input class="review-form__field field field--surname" type="text" name="surname" placeholder="Пустота" aria-label="Поле ввода фамилии." required>
             </label>
             <label class="review-form__label">
-              Отчество:
+              <span class="review-form__field-name">Отчество:</span>
               <input class="review-form__field field field--patronymic" type="text" name="patronymic" placeholder="Викторович" aria-label="Поле ввода отчества.">
             </label>
           </fieldset>
-          <fieldset class="review-form__fieldset">
+          <fieldset class="review-form__fieldset review-form__fieldset--contacts">
             <legend class="review-form__title">Контактная информация:</legend>
-            <label class="review-form__label">
-              Контактный телефон*:
-              <div class="field-wrapper field-wrapper--has-icon field-wrapper--phone">
-                <input class="review-form__field field" type="tel" placeholder="Введите телефон" aria-label="Поле ввода телефона." required>
-              </div>
+            <label class="review-form__label" for="phone_field">
+              <span class="review-form__field-name">Контактный телефон*:</span>
+              <input class="review-form__field field field--phone-icon" id="phone_field" type="tel" placeholder="Введите телефон" aria-label="Поле ввода телефона." required>
             </label>
-            <label class="review-form__label">
-              Электронная почта*:
-              <div class="field-wrapper field-wrapper--has-icon field-wrapper--mail">
-                <input class="review-form__field field" type="email" placeholder="Введите e-mail" aria-label="Поле ввода имейла." required>
-              </div>
+            <label class="review-form__label" for="email_field">
+              <span class="review-form__field-name">Электронная почта*:</span>
+              <input class="review-form__field field field--email-icon" id="email_field" type="email" placeholder="Введите e-mail" aria-label="Поле ввода имейла." required>
             </label>
           </fieldset>
           <fieldset class="review-form__fieldset review-form__fieldset--radio review-form__fieldset--wide">
@@ -166,7 +162,7 @@
             </a>
           </li>
         </ul>
-        <a class="footer__author-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="footer__author-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
           <span class="footer__author-text">Разработано</span>
           <svg class="footer__author-image" width="27" height="35"  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/icons/other/sprite.svg#author-icon"></use>

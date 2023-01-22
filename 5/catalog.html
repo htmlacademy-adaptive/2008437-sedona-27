@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="ico" href="img/favicon/favicon.ico">
+    <link rel="ico" href="favicon.ico">
     <link rel="ico" href="img/favicon/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <base href="https://htmlacademy-adaptive.github.io/2008437-sedona-27/5/">
@@ -40,13 +40,13 @@
 
     <main class="page-container">
 
-      <section class="banner banner--inner">
-        <h2 class="visually-hidden">Пожалуй, лучший курорт Аризоны!</h2>
+      <section class="banner banner--inner banner--catalog">
+        <h1 class="visually-hidden">Пожалуй, лучший курорт Аризоны!</h1>
         <img class="banner__image banner__image--small" src="img/sedona-sign.svg" width="229" height="39" alt="Добро пожаловать в Седону – лучшую альтернативу Гранд Каньону!">
       </section>
 
       <section class="promo promo--catalog">
-        <h1 class="promo__title promo__title--inner">Фото и видео</h1>
+        <h2 class="promo__title promo__title--inner">Фото и видео</h2>
         <p class="promo__subtitle promo__subtitle--inner">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </section>
 
@@ -56,9 +56,12 @@
           <li class="gallery-item gallery-item--wide">
             <figure class="gallery__container">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/photo-1_desktop.webp 1x, img/catalog/photo-1_desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/photo-1_tablet.webp 1x, img/catalog/photo-1_tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/photo-1_phone.webp 1x, img/catalog/photo-1_phone@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/catalog/photo-1_desktop.jpg 1x, img/catalog/photo-1_desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/photo-1_tablet.jpg 1x, img/catalog/photo-1_tablet@2x.jpg 2x">
-                <img class="gallery__photo gallery__photo--wide" src="img/catalog/photo-1_mobile.jpg" srcset="img/catalog/photo-1_mobile@2x.jpg 2x" width="280" height="280" alt="Красивая дорога залитая закатным солнцем.">
+                <img class="gallery__photo gallery__photo--wide" src="img/catalog/photo-1_phone.jpg" srcset="img/catalog/photo-1_phone@2x.jpg 2x" width="280" height="280" alt="Красивая дорога залитая закатным солнцем.">
               </picture>
               <figcaption class="gallery__description">
                 <div class="gallery__author-wrapper">
@@ -72,9 +75,12 @@
           <li class="gallery-item">
             <figure class="gallery__container">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/photo-2_desktop.webp 1x, img/catalog/photo-2_desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/photo-2_tablet.webp 1x, img/catalog/photo-2_tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/photo-2_phone.webp 1x, img/catalog/photo-2_phone@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/catalog/photo-2_desktop.jpg 1x, img/catalog/photo-2_desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/photo-2_tablet.jpg 1x, img/catalog/photo-2_tablet@2x.jpg 2x">
-                <img class="gallery__photo" src="img/catalog/photo-2_mobile.jpg" srcset="img/catalog/photo-2_mobile@2x.jpg 2x" width="280" height="280" alt="Растительность пустыни.">
+                <img class="gallery__photo" src="img/catalog/photo-2_phone.jpg" srcset="img/catalog/photo-2_phone@2x.jpg 2x" width="280" height="280" alt="Растительность пустыни.">
               </picture>
               <figcaption class="gallery__description">
                 <div class="gallery__author-wrapper">
@@ -90,7 +96,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/catalog/photo-3_desktop.jpg 1x, img/catalog/photo-3_desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/photo-3_tablet.jpg 1x, img/catalog/photo-3_tablet@2x.jpg 2x">
-                <img class="gallery__photo" src="img/catalog/photo-3_mobile.jpg" srcset="img/catalog/photo-3_mobile@2x.jpg 2x" width="280" height="280" alt="Красивое шоссе сквозь изгибы холмов.">
+                <img class="gallery__photo" src="img/catalog/photo-3_phone.jpg" srcset="img/catalog/photo-3_phone@2x.jpg 2x" width="280" height="280" alt="Красивое шоссе сквозь изгибы холмов.">
               </picture>
               <figcaption class="gallery__description">
                 <div class="gallery__author-wrapper">
@@ -106,7 +112,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/catalog/photo-4_desktop.jpg 1x, img/catalog/photo-4_desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/photo-4_tablet.jpg 1x, img/catalog/photo-4_tablet@2x.jpg 2x">
-                <img class="gallery__photo" src="img/catalog/photo-4_mobile.jpg" srcset="img/catalog/photo-4_mobile@2x.jpg 2x" width="280" height="280" alt="Знаменитый мост дьявола в красных скалах.">
+                <img class="gallery__photo" src="img/catalog/photo-4_phone.jpg" srcset="img/catalog/photo-4_phone@2x.jpg 2x" width="280" height="280" alt="Знаменитый мост дьявола в красных скалах.">
               </picture>
               <figcaption class="gallery__description">
                 <div class="gallery__author-wrapper">
@@ -135,8 +141,8 @@
 
     <footer class="footer">
       <div class="footer__wrapper">
-        <span class="footer__hashtag">#visitsedona</span>
-        <ul class="footer__social-list">
+        <span class="footer__hashtag footer__hashtag--catalog">#visitsedona</span>
+        <ul class="footer__social-list footer__social-list--catalog">
           <li class="footer__social-item">
             <a class="footer__social-link footer__social-link--vkontakte" href="#">
               <svg class="footer__social-image footer__social-image--vk" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -162,7 +168,7 @@
             </a>
           </li>
         </ul>
-        <a class="footer__author-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="footer__author-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
           <span class="footer__author-text">Разработано</span>
           <svg class="footer__author-image" width="27" height="35"  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/icons/other/sprite.svg#author-icon"></use>
