@@ -1,8 +1,12 @@
 .page {
   background-color: @field-color;
+  height: 100%;
 }
 
 .page__body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   max-width: 1200px;
   margin: 0 auto;
   font-family: @primary-font;
