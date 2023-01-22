@@ -69,18 +69,18 @@
           </fieldset>
           <fieldset class="review-form__fieldset">
             <legend class="review-form__title">Контактная информация:</legend>
-            <label class="review-form__label">
+            <label class="review-form__label" for="phone_field">
               Контактный телефон*:
-              <div class="field-wrapper field-wrapper--has-icon field-wrapper--phone">
-                <input class="review-form__field field" type="tel" placeholder="Введите телефон" aria-label="Поле ввода телефона." required>
-              </div>
             </label>
-            <label class="review-form__label">
+            <div class="field-wrapper field-wrapper--has-icon field-wrapper--phone">
+              <input class="review-form__field field" id="phone_field" type="tel" placeholder="Введите телефон" aria-label="Поле ввода телефона." required>
+            </div>
+            <label class="review-form__label" for="email_field">
               Электронная почта*:
-              <div class="field-wrapper field-wrapper--has-icon field-wrapper--mail">
-                <input class="review-form__field field" type="email" placeholder="Введите e-mail" aria-label="Поле ввода имейла." required>
-              </div>
             </label>
+            <div class="field-wrapper field-wrapper--has-icon field-wrapper--mail">
+              <input class="review-form__field field" id="email_field" type="email" placeholder="Введите e-mail" aria-label="Поле ввода имейла." required>
+            </div>
           </fieldset>
           <fieldset class="review-form__fieldset review-form__fieldset--radio review-form__fieldset--wide">
             <legend class="review-form__title">Ваше общее впечатление:</legend>
@@ -165,7 +165,7 @@
             </a>
           </li>
         </ul>
-        <a class="footer__author-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.>
+        <a class="footer__author-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
           <span class="footer__author-text">Разработано</span>
           <svg class="footer__author-image" width="27" height="35"  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/icons/other/sprite.svg#author-icon"></use>
