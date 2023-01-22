@@ -55,32 +55,28 @@
           <fieldset class="review-form__fieldset review-form__fieldset--bordered">
             <legend class="review-form__title">Представьтесь:</legend>
             <label class="review-form__label">
-              Имя*:
+              <span class="review-form__field-name">Имя*:</span>
               <input class="review-form__field field field--name" type="text" name="name" placeholder="Пётр" aria-label="Поле ввода имени." required>
             </label>
             <label class="review-form__label">
-              Фамилия*:
+              <span class="review-form__field-name">Фамилия*:</span>
               <input class="review-form__field field field--surname" type="text" name="surname" placeholder="Пустота" aria-label="Поле ввода фамилии." required>
             </label>
             <label class="review-form__label">
-              Отчество:
+              <span class="review-form__field-name">Отчество:</span>
               <input class="review-form__field field field--patronymic" type="text" name="patronymic" placeholder="Викторович" aria-label="Поле ввода отчества.">
             </label>
           </fieldset>
           <fieldset class="review-form__fieldset">
             <legend class="review-form__title">Контактная информация:</legend>
             <label class="review-form__label" for="phone_field">
-              Контактный телефон*:
+              <span class="review-form__field-name">Контактный телефон*:</span>
+              <input class="review-form__field field field--phone-icon" id="phone_field" type="tel" placeholder="Введите телефон" aria-label="Поле ввода телефона." required>
             </label>
-            <div class="field-wrapper field-wrapper--has-icon field-wrapper--phone">
-              <input class="review-form__field field" id="phone_field" type="tel" placeholder="Введите телефон" aria-label="Поле ввода телефона." required>
-            </div>
             <label class="review-form__label" for="email_field">
-              Электронная почта*:
+              <span class="review-form__field-name">Электронная почта*:</span>
+              <input class="review-form__field field field--email-icon" id="email_field" type="email" placeholder="Введите e-mail" aria-label="Поле ввода имейла." required>
             </label>
-            <div class="field-wrapper field-wrapper--has-icon field-wrapper--mail">
-              <input class="review-form__field field" id="email_field" type="email" placeholder="Введите e-mail" aria-label="Поле ввода имейла." required>
-            </div>
           </fieldset>
           <fieldset class="review-form__fieldset review-form__fieldset--radio review-form__fieldset--wide">
             <legend class="review-form__title">Ваше общее впечатление:</legend>
@@ -137,7 +133,7 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__wrapper footer__wrapper--catalog">
+      <div class="footer__wrapper">
         <span class="footer__hashtag">#visitsedona</span>
         <ul class="footer__social-list">
           <li class="footer__social-item">

@@ -1,6 +1,10 @@
 .review-form__form {
   margin: 0 auto;
 
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid @field-darker-color;
+  }
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -30,8 +34,8 @@
     column-gap: 32px;
     row-gap: 16px;
     margin: 0;
-    padding: 24px 20px;
-    margin-top: -15px;
+    padding: 24px 20px 39px;
+    border-bottom: 1px solid @field-darker-color;
   }
 
   @media (min-width: @tablet-width) {
@@ -88,11 +92,15 @@
   }
 }
 
+.review-form__field-name {
+  padding-left: 16px;
+}
+
 .review-form__title {
   box-sizing: border-box;
   width: 100%;
-  margin-top: -24px;
-  margin-bottom: 20px;
+  padding-top: 24px;
+  margin-bottom: -4px;
   text-align: center;
   .subtitle();
 
