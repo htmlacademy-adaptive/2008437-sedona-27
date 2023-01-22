@@ -2,11 +2,11 @@
   padding: 28.5px 77px 23px;
 
   @media (min-width: @tablet-width) {
-    padding: 36.5px 60px;
+    padding: 36.5px 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 36px 119px;
+    padding: 36px 0;
   }
 }
 
@@ -16,10 +16,35 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 632px;
+    grid-template-columns: 160px 246px 140px;
+    column-gap: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 944px;
+    grid-template-columns: 160px 246px 140px;
+    column-gap: 199px;
+  }
+
+  &--catalog {
+    @media (min-width: @tablet-width) {
+      width: 648px;
+      grid-template-columns: 160px 246px 158px;
+      column-gap: 43px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 961px;
+      grid-template-columns: 199px 301px 201px;
+      column-gap: 130px;
+    }
   }
 }
 
@@ -34,23 +59,22 @@
 }
 
 .footer__social-list {
+  justify-self: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   margin: 0;
   padding: 0;
-  margin-bottom: 24px;
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: -16px;
-    margin-left: -4px;
+    margin-bottom: -6px;
   }
 }
 
 .footer__social-item:not(:last-child) {
   margin-right: 6px;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
 }
 
 .footer__social-link {
@@ -79,6 +103,7 @@
 }
 
 .footer__author-link {
+  justify-self: flex-end;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,27 +116,6 @@
 
   &:active {
     color: @author-darkest-color;
-  }
-
-  @media (min-width: @tablet-width) {
-    position: relative;
-    right: 15px;
-  }
-
-  @media (min-width: @desktop-width) {
-    position: relative;
-    right: 17px;
-  }
-}
-
-.footer--inner .footer__author-link {
-  @media (min-width: @desktop-width) {
-    position: static;
-  }
-
-  @media (min-width: @desktop-width) {
-    position: relative;
-    right: 17px;
   }
 }
 
