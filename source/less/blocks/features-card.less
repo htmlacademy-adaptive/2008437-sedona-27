@@ -44,13 +44,24 @@
   }
 }
 
+.features-card .features-card__description--narrow {
+  @media (min-width: @tablet-width) {
+    max-width: 290px;
+  }
+}
+
 .features-card--illustrated .features-card__title {
   color: @opposite-color;
-  max-width: 150px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 150px;
+  }
 }
 
 .features-card--illustrated .features-card__description--narrow {
-  max-width: 220px;
+  @media (min-width: @tablet-width) {
+    max-width: 220px;
+  }
 }
 
 .features-card--start {

@@ -1,8 +1,11 @@
 .gallery__list {
   margin: 0 auto;
   padding: 0;
-  border-top: 1px solid @field-darker-color;
   list-style-type: none;
+
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid @field-darker-color;
+  }
 
   @media (min-width: @tablet-width) {
     display: grid;
