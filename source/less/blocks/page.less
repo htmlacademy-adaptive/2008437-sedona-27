@@ -1,5 +1,13 @@
+.page {
+  background-color: @field-color;
+  height: 100%;
+}
+
 .page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   max-width: 1200px;
+  min-height: 100%;
   margin: 0 auto;
   font-family: @primary-font;
   font-style: normal;
@@ -8,6 +16,7 @@
   line-height: 21px;
   text-transform: uppercase;
   color: @text-color;
+  background-color: @opposite-color;
 
   @media (min-width: @desktop-width) {
     box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);

@@ -1,14 +1,25 @@
 .field {
+  position: relative;
   box-sizing: border-box;
   width: 100%;
   padding: 16px;
   border: none;
-  background-color: @light-grey;
+  background-color: @field-color;
   font-family: inherit;
-  .subtitle-black();
+  .subtitle();
   text-transform: none;
 
   &:placeholder-shown {
     color: rgba(0, 0, 0, 0.3);
   }
+}
+
+.field--phone-icon {
+  background:  url("../img/icons/other/phone.svg") no-repeat right 20px center,
+    linear-gradient(to left, @field-icon-color 58px, @field-color 58px);
+}
+
+.field--email-icon {
+  background:  url("../img/icons/other/mail.svg") no-repeat right 20px center,
+    linear-gradient(to left, @field-icon-color 58px, @field-color 58px);
 }

@@ -1,18 +1,68 @@
 .video-presentation {
   text-align: center;
-}
 
-.video-presentation__video {
-  max-width: 280px;
-  max-height: 177px;
+  @media (max-width: @mobile-width-only) {
+    padding: 19px 20px 0 20px;
+  }
 
   @media (min-width: @tablet-width) {
-    max-width: 648px;
-    max-height: 500px;
+    padding: 59.5px 0 40px 0;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 800px;
-    max-height: 500px;
+    padding: 61px 0 84px 0;
+  }
+}
+
+.video-presentation__title {
+  margin: 0;
+
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 29px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+}
+
+.video-presentation__text {
+  margin: 0 auto;
+  text-align: center;
+
+  @media (max-width: @mobile-width-only) {
+    width: 90%;
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 450px;
+    margin-bottom: 88px;
+  }
+}
+
+.video-presentation__video {
+  margin-bottom: -5.5px;
+
+  @media (max-width: @mobile-width-only) {
+    width: 280px;
+    height: 177px;
+    background-image: url("../img/catalog/video-cover_phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/catalog/video-cover_tablet.jpg");
+    width: 648px;
+    height: 500px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/catalog/video-cover_desktop.jpg");
+    width: 800px;
+    height: 500px;
   }
 }

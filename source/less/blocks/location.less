@@ -1,6 +1,9 @@
 .location {
   position: relative;
-  padding-bottom: 10px;
+
+  @media (max-width: @mobile-width-only) {
+    padding-bottom: 10px;
+  }
 
   &::before,
   &::after {
@@ -17,13 +20,13 @@
   &::before {
     width: 27px;
     height: 27px;
-    background-color: @white;
+    background-color: @opposite-color;
   }
 
   &::after {
     width: 17px;
     height: 17px;
-    background-color: @marker-blue;
+    background-color: @marker-color;
   }
 }
 
