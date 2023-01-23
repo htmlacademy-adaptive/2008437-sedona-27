@@ -40,7 +40,7 @@
     }
 
     @media (min-width: @tablet-width) {
-      padding-top: 67px;
+      padding-top: 64px;
       padding-bottom: 81px;
     }
 
@@ -66,13 +66,23 @@
     margin-bottom: 28px;
   }
 
-  &--inner {
+  &--catalog {
     text-indent: 0;
-    margin-bottom: 24px; //FIXME Возможно только для формы
+    margin-bottom: 24px;
 
     @media (min-width: @tablet-width) {
       font-size: 30px;
       margin-bottom: 30px;
+    }
+  }
+
+  &--form {
+    text-indent: 0;
+    margin-bottom: 24px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 30px;
+      margin-bottom: 19px;
     }
   }
 }
@@ -82,11 +92,20 @@
   margin: 0;
   text-align: center;
 
-  &--inner {
+  &--catalog {
     max-width: 90%;
 
     @media (min-width: @tablet-width) {
       max-width: 430px;
+    }
+  }
+
+  &--form {
+    max-width: 90%;
+
+    @media (min-width: @tablet-width) {
+      line-height: 24px;
+      max-width: 440px;
     }
   }
 }

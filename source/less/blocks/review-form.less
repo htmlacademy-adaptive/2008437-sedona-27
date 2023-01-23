@@ -8,10 +8,8 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 88px;
     row-gap: 48px;
     justify-content: center;
-    padding: 0 60px 64px 60px;
   }
 
   @media (min-width: @desktop-width) {
@@ -42,13 +40,20 @@
   }
 
   @media (min-width: @tablet-width) {
+    grid-template-columns: auto;
     justify-content: center;
-    padding-bottom: 15px;
+    padding: 0 60px 0 26px;
+    row-gap: 16px;
   }
 
   &--contacts {
     @media (max-width: @mobile-width-only) {
       padding-bottom: 34px;
+    }
+
+    @media (min-width: @tablet-width) {
+      grid-template-rows: max-content max-content max-content;
+      padding-left: 44px;
     }
   }
 
@@ -87,15 +92,8 @@
 
   &--bordered {
     @media (min-width: @tablet-width) {
-      &::after {
-        position: absolute;
-        top: -50px;
-        right: -43px;
-        height: 323px;
-        width: 1px;
-        background-color: @decorative-border-color;
-        content: "";
-      }
+      padding: 0 43px 15px 60px;
+      border-right: 1px solid @field-darkest-color;
     }
   }
 
@@ -123,8 +121,20 @@
   .subtitle();
 
   @media (min-width: @tablet-width) {
+    padding-top: 22px;
     font-size: 21px;
+    margin-bottom: 27px;
   }
+}
+
+.review-form__title--name {
+  padding-left: 42px;
+}
+
+.review-form__title--contacts {
+  text-align: left;
+  margin-left: -20px;
+  white-space: nowrap;
 }
 
 .field-wrapper {
