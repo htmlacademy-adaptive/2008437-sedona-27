@@ -1,4 +1,5 @@
 .modal {
+  display: none;
   box-sizing: border-box;
   text-align: center;
   background-color: @opposite-color;
@@ -6,16 +7,38 @@
 
   @media (max-width: @mobile-width-only) {
     width: 320px;
-    min-height: 280px;
-    padding: 45px 42px 35px 41px;
+    min-height: 323px;
+    padding: 39px 0 0 0;
   }
 
   @media (min-width: @tablet-width) {
-    width: 400px;
+    width: 640px;
+    padding: 58px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
     width: 640px;
+  }
+
+  &--failure {
+    @media (max-width: @mobile-width-only) {
+      width: 320px;
+      min-height: 280px;
+      padding: 45px 42px 35px 41px;
+    }
+
+    @media (min-width: @tablet-width) {
+      width: 400px;
+      padding: 55px 46.5px 49px 46.5px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 400px;
+    }
+  }
+
+  &--open {
+    display: block;
   }
 }
 
@@ -28,7 +51,22 @@
   }
 
   @media (min-width: @tablet-width) {
+    max-width: 444px;
+    margin: 0 auto;
     margin-bottom: 20px;
+    font-size: 30px;
+  }
+
+  &--failure {
+    @media (max-width: @mobile-width-only) {
+      max-width: 240px;
+      margin: 0 auto;
+      margin-bottom: 35px;
+    }
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -40,7 +78,21 @@
   }
 
   @media (min-width: @tablet-width) {
+    margin: 0 auto;
     margin-bottom: 30px;
+    max-width: 444px;
+  }
+
+  &--failure {
+    @media (max-width: @mobile-width-only) {
+      max-width: 240px;
+      margin: 0 auto;
+      margin-bottom: 41px;
+    }
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -58,4 +110,8 @@
 
 .modal__button {
   font-size: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
