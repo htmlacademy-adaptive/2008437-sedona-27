@@ -7,7 +7,8 @@
     <title>HTML Academy: Седона</title>
     <link rel="ico" href="favicon.ico">
     <link rel="ico" href="img/favicon/favicon.png" type="image/png">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
   </head>
 
   <body class="page__body">
@@ -33,7 +34,7 @@
         </ul>
       </nav>
       <a class="header__logo" href="index.html">
-        <img src="img/icons/logo/logo.svg" width="185" height="96" alt="Логотип туристического городка «Седона».">
+        <img src="img/logo.svg" width="185" height="96" alt="Логотип туристического городка «Седона».">
       </a>
     </header>
 
@@ -51,7 +52,7 @@
       <section class="gallery">
         <h2 class="visually-hidden">Фото видов Седоны</h2>
         <ul class="gallery__list">
-          <li class="gallery-item gallery-item--wide">
+          <li class="gallery__item gallery__item--wide">
             <figure class="gallery__container">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/photo-1_desktop.webp 1x, img/catalog/photo-1_desktop@2x.webp 2x">
@@ -70,7 +71,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="gallery-item">
+          <li class="gallery__item">
             <figure class="gallery__container">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/photo-2_desktop.webp 1x, img/catalog/photo-2_desktop@2x.webp 2x">
@@ -89,7 +90,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="gallery-item">
+          <li class="gallery__item">
             <figure class="gallery__container">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/catalog/photo-3_desktop.jpg 1x, img/catalog/photo-3_desktop@2x.jpg 2x">
@@ -105,7 +106,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="gallery-item">
+          <li class="gallery__item">
             <figure class="gallery__container">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/catalog/photo-4_desktop.jpg 1x, img/catalog/photo-4_desktop@2x.jpg 2x">
@@ -144,7 +145,7 @@
           <li class="footer__social-item">
             <a class="footer__social-link footer__social-link--vkontakte" href="#">
               <svg class="footer__social-image footer__social-image--vk" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/icons/other/sprite.svg#vk-icon"></use>
+                <use xlink:href="img/sprite.svg#vk-icon"></use>
               </svg>
               <span class="visually-hidden">Переход в группу Вконтакте.</span>
             </a>
@@ -152,7 +153,7 @@
           <li class="footer__social-item">
             <a class="footer__social-link footer__social-link--telegram" href="#">
               <svg class="footer__social-image footer__social-image--tg" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/icons/other/sprite.svg#tg-icon"></use>
+                <use xlink:href="img/sprite.svg#tg-icon"></use>
               </svg>
               <span class="visually-hidden">Переход в канал Телеграмм.</span>
             </a>
@@ -160,7 +161,7 @@
           <li class="footer__social-item">
             <a class="footer__social-link footer__social-link--youtube" href="#">
               <svg class="footer__social-image footer__social-image--yt" width="24" height="24" fill="currentColor">
-                <use xlink:href="img/icons/other/sprite.svg#yt-icon"></use>
+                <use xlink:href="img/sprite.svg#yt-icon"></use>
               </svg>
               <span class="visually-hidden">Переход  на канал Ютуб.</span>
             </a>
@@ -169,7 +170,7 @@
         <a class="footer__author-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
           <span class="footer__author-text">Разработано</span>
           <svg class="footer__author-image" width="27" height="35"  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/icons/other/sprite.svg#author-icon"></use>
+            <use xlink:href="img/sprite.svg#author-icon"></use>
           </svg>
         </a>
       </div>

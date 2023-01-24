@@ -7,7 +7,8 @@
     <title>HTML Academy: Седона</title>
     <link rel="ico" href="favicon.ico">
     <link rel="ico" href="img/favicon/favicon.png" type="image/png">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
   </head>
 
   <body class="page__body">
@@ -33,7 +34,7 @@
         </ul>
       </nav>
       <a class="header__logo" href="#">
-        <img class="header__image" src="img/icons/logo/logo.svg" width="185" height="96" alt="Логотип туристического городка «Седона».">
+        <img class="header__image" src="img/logo.svg" width="185" height="96" alt="Логотип туристического городка «Седона».">
       </a>
     </header>
 
@@ -52,7 +53,7 @@
       <section class="features">
         <h2 class="visually-hidden">Преимущества Седоны.</h2>
         <ol class="features-list">
-          <li class="features-item features-item--wide">
+          <li class="features__item features__item--wide">
             <div class="features-card features-card--illustrated features-card--start">
               <h3 class="features-card__title">Настоящий городок</h3>
               <span class="features-card__number">— №1 —</span>
@@ -61,7 +62,7 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-city_desktop.jpg 1x, img/photo-city_desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-city_tablet.jpg 1x, img/photo-city_tablet@2x.jpg 2x">
-              <img class="features-item__image" src="img/photo-city_phone.jpg" srcset="img/photo-city_phone@2x.jpg 2x" width="320" height="260" alt="Вид на обычный городской дом в Седоне.">
+              <img class="features__item__image" src="img/photo-city_phone.jpg" srcset="img/photo-city_phone@2x.jpg 2x" width="320" height="260" alt="Вид на обычный городской дом в Седоне.">
             </picture>
 
             <ul class="features-sublist">
@@ -85,7 +86,7 @@
               </li>
             </ul>
           </li>
-          <li class="features-item features-item--wide features-item--reversed">
+          <li class="features__item features__item--wide features__item--reversed">
             <div class="features-card features-card--illustrated">
               <h3 class="features-card__title">Там есть Мост Дьявола</h3>
               <span class="features-card__number">— №2 —</span>
@@ -94,24 +95,24 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-bridge_desktop.jpg 1x, img/photo-bridge_desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-bridge_tablet.jpg 1x, img/photo-bridge_tablet@2x.jpg 2x">
-              <img class="features-item__image" src="img/photo-bridge_phone.jpg" srcset="img/photo-bridge_phone@2x.jpg 2x" width="320" height="260" alt="Вид на красивый каньон.">
+              <img class="features__item__image" src="img/photo-bridge_phone.jpg" srcset="img/photo-bridge_phone@2x.jpg 2x" width="320" height="260" alt="Вид на красивый каньон.">
             </picture>
           </li>
-          <li class="features-item">
+          <li class="features__item">
             <div class="features-card features-card--bordered">
               <h3 class="features-card__title">Небольшая площадь</h3>
               <span class="features-card__number">— №3 —</span>
               <p class="features-card__description">Все интересные места находятся очень близко</p>
             </div>
           </li>
-          <li class="features-item">
+          <li class="features__item">
             <div class="features-card features-card--bordered">
               <h3 class="features-card__title">Красивая дорога</h3>
               <span class="features-card__number">— №4 —</span>
               <p class="features-card__description">Ехать в Седону из Лас-Вегаса <br> совсем<br class="features-card__tablet-br"> не скучно!</p>
             </div>
           </li>
-          <li class="features-item">
+          <li class="features__item">
             <div class="features-card">
               <h3 class="features-card__title">Мало туристов</h3>
               <span class="features-card__number">— №5 —</span>
@@ -126,7 +127,7 @@
         <p class="hotel-search__description">
           Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
-        <button class="hotel-search__button button" type="button">Найти Гостиницу</button>
+        <a class="hotel-search__button button" href="search.html">Найти Гостиницу</a>
       </section>
 
       <section class="location">
@@ -149,7 +150,7 @@
           <li class="footer__social-item">
             <a class="footer__social-link footer__social-link--vkontakte" href="#">
               <svg class="footer__social-image footer__social-image--vk" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/icons/other/sprite.svg#vk-icon"></use>
+                <use xlink:href="img/sprite.svg#vk-icon"></use>
               </svg>
               <span class="visually-hidden">Переход в группу Вконтакте.</span>
             </a>
@@ -157,7 +158,7 @@
           <li class="footer__social-item">
             <a class="footer__social-link footer__social-link--telegram" href="#">
               <svg class="footer__social-image footer__social-image--tg" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/icons/other/sprite.svg#tg-icon"></use>
+                <use xlink:href="img/sprite.svg#tg-icon"></use>
               </svg>
               <span class="visually-hidden">Переход в канал Телеграмм.</span>
             </a>
@@ -165,7 +166,7 @@
           <li class="footer__social-item">
             <a class="footer__social-link footer__social-link--youtube" href="#">
               <svg class="footer__social-image footer__social-image--yt" width="24" height="24" fill="currentColor">
-                <use xlink:href="img/icons/other/sprite.svg#yt-icon"></use>
+                <use xlink:href="img/sprite.svg#yt-icon"></use>
               </svg>
               <span class="visually-hidden">Переход  на канал Ютуб.</span>
             </a>
@@ -174,7 +175,7 @@
         <a class="footer__author-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
           <span class="footer__author-text">Разработано</span>
           <svg class="footer__author-image" width="27" height="35"  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/icons/other/sprite.svg#author-icon"></use>
+            <use xlink:href="img/sprite.svg#author-icon"></use>
           </svg>
         </a>
       </div>

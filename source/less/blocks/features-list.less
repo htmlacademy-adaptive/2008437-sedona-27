@@ -20,3 +20,35 @@
     width: 1200px;
   }
 }
+
+.features__item {
+  @media (min-width: @tablet-width) {
+    grid-column: span 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.features__item--wide {
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / -1;
+  }
+}
+
+.features__item--reversed {
+  flex-direction: row-reverse;
+}
+
+.features__item__image {
+  display: block;
+  width: 100%;
+  object-fit: none;
+
+  @media (max-width: @mobile-width-only) {
+    height: 260px;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 256px;
+  }
+}
