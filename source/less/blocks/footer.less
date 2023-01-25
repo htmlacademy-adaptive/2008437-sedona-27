@@ -117,11 +117,11 @@
 
   &:active {
     background-color: @accent-darkest-color;
-
-    & .footer__social-image {
-      fill: rgba(red(@opposite-color), green(@opposite-color), blue(@opposite-color), 0.3);
-    }
   }
+}
+
+.footer__social-link:active .footer__social-image {
+  fill: rgba(red(@opposite-color), green(@opposite-color), blue(@opposite-color), 0.3);
 }
 
 .footer__social-image {
