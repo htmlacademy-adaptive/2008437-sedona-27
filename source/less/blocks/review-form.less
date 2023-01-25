@@ -353,9 +353,18 @@
     color: rgba(0, 0, 0, 0.3);
   }
 
+  @media (max-width: @mobile-width-only) {
+    min-width: 279px;
+    min-height: 150px;
+  }
+
   @media (min-width: @tablet-width) {
     width: 648px;
+    min-width: 648px;
+    max-width: 750px;
     height: 160px;
+    min-height: 160px;
+    max-height: 400px;
   }
 
   @media (min-width: @desktop-width) {
