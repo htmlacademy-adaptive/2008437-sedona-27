@@ -33,6 +33,12 @@
 }
 
 .site-list__item {
+  @media (max-width: @mobile-width-only) {
+    &:not(:last-child) {
+      margin-bottom: 1px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     &:nth-of-type(4n - 2) {
       margin-right: 153px;
@@ -43,12 +49,6 @@
     &:nth-of-type(4n - 2) {
       margin-right: 240px;
     }
-  }
-}
-
-@media (max-width: @mobile-width-only) {
-  .site-list__item:not(:last-child) {
-    margin-bottom: 1px;
   }
 }
 
