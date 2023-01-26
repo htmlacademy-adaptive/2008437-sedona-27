@@ -107,12 +107,6 @@
       background-image: url("../img/present-big.svg");
     }
   }
-
-  @media (min-width: @tablet-width) {
-    & .features-sublist__title {
-      margin-top: 10px;
-    }
-  }
 }
 
 .features-sublist__item--souvenirs .features-sublist__title {
@@ -140,10 +134,10 @@
 
 .features-sublist__description {
   margin: 0;
+}
 
+.features-sublist__description br {
   @media (max-width: @mobile-width-only) {
-    & br {
-      display: none;
-    }
+    display: none;
   }
 }
